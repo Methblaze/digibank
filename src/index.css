@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-night font-sans text-ink antialiased;
+    min-height: 100dvh;
+  }
+  :focus-visible {
+    outline: 3px solid #a8ecff;
+    outline-offset: 3px;
+    border-radius: 12px;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  /* Soft "clay" surface: a raised tile with an inner highlight */
+  .clay {
+    @apply rounded-clay bg-night-800 shadow-clay;
+  }
+  .btn {
+    @apply inline-flex min-h-[48px] cursor-pointer select-none items-center justify-center gap-2 rounded-full px-6 font-display text-lg font-semibold transition-[background-color,box-shadow,opacity] duration-200 disabled:cursor-not-allowed disabled:opacity-45;
+  }
+  .btn-gold {
+    @apply btn bg-piggy text-night shadow-clay-sm hover:bg-[#ffd166] active:shadow-press;
+  }
+  .btn-blue {
+    @apply btn bg-periwinkle text-night shadow-clay-sm hover:bg-[#95a7ff] active:shadow-press;
+  }
+  .btn-ghost {
+    @apply btn bg-night-700 text-ink shadow-clay-sm hover:bg-night-600 active:shadow-press;
+  }
+  .eyebrow {
+    @apply font-display text-sm font-medium uppercase tracking-[0.14em] text-mist;
+  }
+}
+
+/* The 2D fallback and reduced motion share one rule: nothing loops. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
