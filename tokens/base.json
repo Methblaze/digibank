@@ -195,6 +195,7 @@
         "$type": "fontFamily",
         "$value": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -204,6 +205,7 @@
         "$type": "fontFamily",
         "$value": [
           "Nunito Variable",
+          "Nunito",
           "system-ui",
           "sans-serif"
         ],

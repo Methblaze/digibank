@@ -54,4 +54,5 @@ Every push to `main` is tested, built and published to GitHub Pages by `.github/
 
 - `src/state/bank.ts` holds the demo data (accounts, payments, cards, friends) and the reducer that moves money; `bank.test.ts` tests it.
 - `src/screens/` has one file per screen; `src/components/Art.tsx` holds the flat drawings (piggy bank, coins, hand, tools).
+- `tokens/` is the design system: one DTCG source for every colour, font, radius and shadow. `npm run tokens:build` writes the Tailwind theme, CSS variables, the Figma sync input and the design system page (`public/design-system/`, live at [/digibank/design-system/](https://methblaze.github.io/digibank/design-system/)); `npm run tokens:check` proves contrast, names and that Figma still matches. The Figma page is [Digi Bank 2026 · Design system](https://www.figma.com/design/OiWVRsdT5PoiNMdZ3eYxmd/DIGI---GREEN-DESIGN-SYSTEM---TOKENS?node-id=0-1).
 - `src/piggy3d/PiggyScene.tsx` is the 3D piggy bank. Its cracks are drawn onto the body's texture in six stages; when it breaks, the body swaps for 24 shell pieces that fly out with the coins.

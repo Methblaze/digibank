@@ -30,10 +30,39 @@
     ]
   },
   "preview": {
-    "title": "Digi Bank 2026 tokens",
-    "lead": "One night theme, the 2019 palette grown up.",
+    "title": "Digi Bank 2026 design system",
+    "lead": "The tokens and components behind the 2026 rebuild: one night theme, the 2019 palette grown up, with clay-style depth.",
     "fontsUrl": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@500;600&display=swap",
-    "bodyFont": "Nunito, system-ui, sans-serif"
+    "bodyFont": "Nunito, system-ui, sans-serif",
+    "intro": "When I rebuilt Digi Bank as a working web app in 2026, I moved its colours, type and clay shadows into one token source, so the Tailwind theme and the Figma file are made from the same values.",
+    "headingFont": "Fredoka, system-ui, sans-serif",
+    "links": [
+      {
+        "label": "Open in Figma",
+        "href": "https://www.figma.com/design/OiWVRsdT5PoiNMdZ3eYxmd/DIGI---GREEN-DESIGN-SYSTEM---TOKENS?node-id=0-1"
+      },
+      {
+        "label": "Token source on GitHub",
+        "href": "https://github.com/Methblaze/digibank/tree/main/tokens"
+      },
+      {
+        "label": "Back to Digi Bank",
+        "href": "../"
+      }
+    ],
+    "components": [
+      {
+        "name": "Button",
+        "use": "Gold for the main action, Blue for a second one and Ghost for a quiet one, each with hover, pressed, focus and disabled."
+      },
+      {
+        "name": "Clay tile",
+        "use": "The raised clay surface for grouped content, with an eyebrow, heading and body."
+      }
+    ],
+    "publish": [
+      "public/design-system"
+    ]
   },
   "figma": {
     "collections": [

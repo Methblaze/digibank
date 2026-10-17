@@ -108,11 +108,13 @@ export const tokens = {
       "family": {
         "display": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
         "sans": [
           "Nunito Variable",
+          "Nunito",
           "system-ui",
           "sans-serif"
         ]
@@ -150,6 +152,7 @@ export const tokens = {
       "display-xl": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -161,6 +164,7 @@ export const tokens = {
       "display-l": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -172,6 +176,7 @@ export const tokens = {
       "display-m": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -183,6 +188,7 @@ export const tokens = {
       "title": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -194,6 +200,7 @@ export const tokens = {
       "heading": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -205,6 +212,7 @@ export const tokens = {
       "subheading": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -216,6 +224,7 @@ export const tokens = {
       "button": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],
@@ -227,6 +236,7 @@ export const tokens = {
       "body-l": {
         "fontFamily": [
           "Nunito Variable",
+          "Nunito",
           "system-ui",
           "sans-serif"
         ],
@@ -238,6 +248,7 @@ export const tokens = {
       "body": {
         "fontFamily": [
           "Nunito Variable",
+          "Nunito",
           "system-ui",
           "sans-serif"
         ],
@@ -249,6 +260,7 @@ export const tokens = {
       "body-s": {
         "fontFamily": [
           "Nunito Variable",
+          "Nunito",
           "system-ui",
           "sans-serif"
         ],
@@ -260,6 +272,7 @@ export const tokens = {
       "caption": {
         "fontFamily": [
           "Nunito Variable",
+          "Nunito",
           "system-ui",
           "sans-serif"
         ],
@@ -271,6 +284,7 @@ export const tokens = {
       "eyebrow": {
         "fontFamily": [
           "Fredoka Variable",
+          "Fredoka",
           "system-ui",
           "sans-serif"
         ],

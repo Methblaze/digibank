@@ -26,8 +26,8 @@
   --shadow-clay: inset 0px 2px 0px 0px #FFFFFF14, inset 0px -6px 12px 0px #00000040, 0px 10px 30px 0px #0306148C;
   --shadow-clay-sm: inset 0px 1px 0px 0px #FFFFFF1A, inset 0px -3px 6px 0px #00000040, 0px 4px 14px 0px #03061473;
   --shadow-press: inset 0px 3px 8px 0px #00000059;
-  --font-family-display: "Fredoka Variable", system-ui, sans-serif;
-  --font-family-sans: "Nunito Variable", system-ui, sans-serif;
+  --font-family-display: "Fredoka Variable", Fredoka, system-ui, sans-serif;
+  --font-family-sans: "Nunito Variable", Nunito, system-ui, sans-serif;
   --font-weight-medium: 500;
   --font-weight-semibold: 600;
   --font-weight-bold: 700;

@@ -40,11 +40,13 @@ export default {
   "fontFamily": {
     "display": [
       "\"Fredoka Variable\"",
+      "Fredoka",
       "system-ui",
       "sans-serif"
     ],
     "sans": [
       "\"Nunito Variable\"",
+      "Nunito",
       "system-ui",
       "sans-serif"
     ]
