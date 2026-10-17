@@ -1,0 +1,278 @@
+{
+ "exportedAt": "2026-10-17",
+ "collections": {
+  "Digi · Primitives · Colour": {
+   "modes": [
+    "Value"
+   ],
+   "vars": {
+    "color/night/600": {
+     "Value": "#26306A"
+    },
+    "color/night/700": {
+     "Value": "#1A2350"
+    },
+    "color/night/800": {
+     "Value": "#111836"
+    },
+    "color/night/900": {
+     "Value": "#0A0F24"
+    },
+    "color/night/default": {
+     "Value": "#0A0F24"
+    },
+    "color/ink": {
+     "Value": "#F3F6FF"
+    },
+    "color/mist": {
+     "Value": "#B4BEE4"
+    },
+    "color/periwinkle/default": {
+     "Value": "#7C93FF"
+    },
+    "color/periwinkle/deep": {
+     "Value": "#5C7BEA"
+    },
+    "color/periwinkle/light": {
+     "Value": "#95A7FF"
+    },
+    "color/piggy/default": {
+     "Value": "#FFC53D"
+    },
+    "color/piggy/deep": {
+     "Value": "#E8A317"
+    },
+    "color/piggy/shadow": {
+     "Value": "#B87A00"
+    },
+    "color/piggy/light": {
+     "Value": "#FFD166"
+    },
+    "color/piggy/pale": {
+     "Value": "#FFE08A"
+    },
+    "color/mint/default": {
+     "Value": "#4BE3A3"
+    },
+    "color/mint/deep": {
+     "Value": "#2BB3A0"
+    },
+    "color/coral": {
+     "Value": "#FF8A7A"
+    },
+    "color/ice": {
+     "Value": "#A8ECFF"
+    },
+    "color/leather/default": {
+     "Value": "#F07A3C"
+    },
+    "color/leather/deep": {
+     "Value": "#C4551F"
+    },
+    "color/leather/light": {
+     "Value": "#F58A4F"
+    }
+   }
+  },
+  "Digi · Primitives · Size": {
+   "modes": [
+    "Value"
+   ],
+   "vars": {
+    "size/radius/clay": {
+     "Value": 28
+    }
+   }
+  },
+  "Digi · Primitives · Type": {
+   "modes": [
+    "Value"
+   ],
+   "vars": {
+    "font/family/display": {
+     "Value": "Fredoka"
+    },
+    "font/family/sans": {
+     "Value": "Nunito"
+    },
+    "font/weight/medium": {
+     "Value": 500
+    },
+    "font/weight/semibold": {
+     "Value": 600
+    },
+    "font/weight/bold": {
+     "Value": 700
+    },
+    "font/size/xs": {
+     "Value": 12
+    },
+    "font/size/sm": {
+     "Value": 14
+    },
+    "font/size/base": {
+     "Value": 16
+    },
+    "font/size/lg": {
+     "Value": 18
+    },
+    "font/size/xl": {
+     "Value": 20
+    },
+    "font/size/2xl": {
+     "Value": 24
+    },
+    "font/size/3xl": {
+     "Value": 30
+    },
+    "font/size/4xl": {
+     "Value": 36
+    },
+    "font/size/5xl": {
+     "Value": 48
+    },
+    "font/size/6xl": {
+     "Value": 60
+    },
+    "font/line-height/16": {
+     "Value": 16
+    },
+    "font/line-height/20": {
+     "Value": 20
+    },
+    "font/line-height/24": {
+     "Value": 24
+    },
+    "font/line-height/28": {
+     "Value": 28
+    },
+    "font/line-height/32": {
+     "Value": 32
+    },
+    "font/line-height/36": {
+     "Value": 36
+    },
+    "font/line-height/40": {
+     "Value": 40
+    },
+    "font/line-height/48": {
+     "Value": 48
+    },
+    "font/line-height/60": {
+     "Value": 60
+    }
+   }
+  },
+  "Digi · Theme": {
+   "modes": [
+    "Night"
+   ],
+   "vars": {
+    "color/bg/canvas": {
+     "Night": "{color/night/900}"
+    },
+    "color/bg/surface": {
+     "Night": "{color/night/800}"
+    },
+    "color/bg/raised": {
+     "Night": "{color/night/700}"
+    },
+    "color/bg/pressed": {
+     "Night": "{color/night/600}"
+    },
+    "color/text/primary": {
+     "Night": "{color/ink}"
+    },
+    "color/text/secondary": {
+     "Night": "{color/mist}"
+    },
+    "color/text/on-accent": {
+     "Night": "{color/night/900}"
+    },
+    "color/accent/primary": {
+     "Night": "{color/piggy/default}"
+    },
+    "color/accent/primary-hover": {
+     "Night": "{color/piggy/light}"
+    },
+    "color/accent/primary-deep": {
+     "Night": "{color/piggy/deep}"
+    },
+    "color/accent/secondary": {
+     "Night": "{color/periwinkle/default}"
+    },
+    "color/accent/secondary-hover": {
+     "Night": "{color/periwinkle/light}"
+    },
+    "color/status/good": {
+     "Night": "{color/mint/default}"
+    },
+    "color/status/error": {
+     "Night": "{color/coral}"
+    },
+    "color/status/info": {
+     "Night": "{color/ice}"
+    },
+    "color/focus/ring": {
+     "Night": "{color/ice}"
+    },
+    "color/card/leather": {
+     "Night": "{color/leather/default}"
+    },
+    "color/card/leather-deep": {
+     "Night": "{color/leather/deep}"
+    }
+   }
+  }
+ },
+ "text": {
+  "Digi/Display XL": {
+   "fontSize": 60,
+   "lineHeight": 60
+  },
+  "Digi/Display L": {
+   "fontSize": 48,
+   "lineHeight": 48
+  },
+  "Digi/Display M": {
+   "fontSize": 36,
+   "lineHeight": 40
+  },
+  "Digi/Title": {
+   "fontSize": 30,
+   "lineHeight": 36
+  },
+  "Digi/Heading": {
+   "fontSize": 24,
+   "lineHeight": 32
+  },
+  "Digi/Subheading": {
+   "fontSize": 20,
+   "lineHeight": 28
+  },
+  "Digi/Button": {
+   "fontSize": 18,
+   "lineHeight": 28
+  },
+  "Digi/Body L": {
+   "fontSize": 18,
+   "lineHeight": 28
+  },
+  "Digi/Body": {
+   "fontSize": 16,
+   "lineHeight": 24
+  },
+  "Digi/Body S": {
+   "fontSize": 14,
+   "lineHeight": 20
+  },
+  "Digi/Caption": {
+   "fontSize": 12,
+   "lineHeight": 16
+  },
+  "Digi/Eyebrow": {
+   "fontSize": 14,
+   "lineHeight": 20
+  }
+ }
+}
