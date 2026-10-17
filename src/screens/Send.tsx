@@ -233,7 +233,7 @@ export function Send() {
                   <span className="mt-1 font-display text-2xl font-semibold">{kr(amount)}</span>
                 </motion.div>
                 <motion.svg aria-hidden width="24" height="60" viewBox="0 0 24 60" animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 1.4 }}>
-                  <path d="M12 2v50M3 44l9 10 9-10" stroke="#B4BEE4" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 6" />
+                  <path d="M12 2v50M3 44l9 10 9-10" className="text-mist" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 6" />
                 </motion.svg>
                 <div ref={handRef} className="relative w-full max-w-[260px]">
                   <div className="absolute -top-2 left-1/2 z-10 -translate-x-1/2">

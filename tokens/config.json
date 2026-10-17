@@ -1,0 +1,81 @@
+{
+  "outputs": [
+    "css",
+    "js",
+    "tailwind",
+    "tokens-studio",
+    "figma",
+    "preview"
+  ],
+  "themeOrder": [
+    "night"
+  ],
+  "themeNames": {
+    "night": "Night"
+  },
+  "tailwind": {
+    "colors": "color",
+    "semantic": false,
+    "radius": "size.radius",
+    "fontFamily": "font.family",
+    "shadow": "shadow"
+  },
+  "codeScan": {
+    "dirs": [
+      "src"
+    ],
+    "ignore": [
+      "src/components/Art.tsx",
+      "src/piggy3d/"
+    ]
+  },
+  "preview": {
+    "title": "Digi Bank 2026 tokens",
+    "lead": "One night theme, the 2019 palette grown up.",
+    "fontsUrl": "https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@500;600&display=swap",
+    "bodyFont": "Nunito, system-ui, sans-serif"
+  },
+  "figma": {
+    "collections": [
+      {
+        "name": "Primitives · Colour",
+        "source": "base",
+        "groups": [
+          "color"
+        ],
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Primitives · Size",
+        "source": "base",
+        "groups": [
+          "size"
+        ],
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Primitives · Type",
+        "source": "base",
+        "groups": [
+          "font.family",
+          "font.weight",
+          "font.size",
+          "font.line-height"
+        ],
+        "modes": [
+          "Value"
+        ]
+      },
+      {
+        "name": "Theme",
+        "source": "themes"
+      }
+    ],
+    "typography": "typography",
+    "textStylePrefix": ""
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "$description": "Descriptions for the semantic tokens.",
+  "color.bg.canvas": "The night sky behind every screen.",
+  "color.bg.surface": "Clay tiles and cards (.clay).",
+  "color.bg.raised": "Ghost buttons and raised rows inside a tile.",
+  "color.bg.pressed": "Hover on ghost buttons and selected rows.",
+  "color.text.primary": "Headings and body text.",
+  "color.text.secondary": "Supporting text and eyebrows.",
+  "color.text.on-accent": "Text on gold and blue buttons.",
+  "color.accent.primary": "Gold: the main action, the piggy bank and coins. One gold button per screen.",
+  "color.accent.primary-hover": "Hover on gold buttons.",
+  "color.accent.primary-deep": "Gold edges and pressed gold.",
+  "color.accent.secondary": "Blue: secondary actions.",
+  "color.accent.secondary-hover": "Hover on blue buttons.",
+  "color.status.good": "Money in, success and online cards. Always with words or an icon.",
+  "color.status.error": "Errors and money out. Always with words or an icon.",
+  "color.status.info": "Neutral highlights.",
+  "color.focus.ring": "Keyboard focus outline, 3 px with a 3 px offset.",
+  "color.card.leather": "The wallet's leather.",
+  "color.card.leather-deep": "The wallet's stitching and darker leather."
+}
