@@ -38,7 +38,7 @@
   "figma": {
     "collections": [
       {
-        "name": "Primitives · Colour",
+        "name": "Digi · Primitives · Colour",
         "source": "base",
         "groups": [
           "color"
@@ -48,7 +48,7 @@
         ]
       },
       {
-        "name": "Primitives · Size",
+        "name": "Digi · Primitives · Size",
         "source": "base",
         "groups": [
           "size"
@@ -58,7 +58,7 @@
         ]
       },
       {
-        "name": "Primitives · Type",
+        "name": "Digi · Primitives · Type",
         "source": "base",
         "groups": [
           "font.family",
@@ -71,11 +71,18 @@
         ]
       },
       {
-        "name": "Theme",
+        "name": "Digi · Theme",
         "source": "themes"
       }
     ],
     "typography": "typography",
-    "textStylePrefix": ""
+    "textStylePrefix": "Digi/",
+    "fileKey": "OiWVRsdT5PoiNMdZ3eYxmd",
+    "page": "DIGI BANK DESIGN SYSTEM",
+    "effectStylePrefix": "Digi/Shadow/",
+    "fontMap": {
+      "Fredoka Variable": "Fredoka",
+      "Nunito Variable": "Nunito"
+    }
   }
 }
