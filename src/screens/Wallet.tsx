@@ -7,7 +7,7 @@ import type { Card } from "../state/bank";
 const look: Record<Card["kind"], string> = {
   Debit: "from-periwinkle to-periwinkle-deep",
   Travel: "from-coral to-leather",
-  Online: "from-mint to-[#2BB3A0]",
+  Online: "from-mint to-mint-deep",
 };
 
 function CardFace({ card, big = false }: { card: Card; big?: boolean }) {
@@ -20,7 +20,7 @@ function CardFace({ card, big = false }: { card: Card; big?: boolean }) {
           <span className="rounded-full bg-night/15 px-2 py-0.5 text-xs font-bold">{card.kind}</span>
         </div>
         <div>
-          <div aria-hidden className={`mb-2 rounded-md bg-[#FFE08A] ${big ? "h-8 w-11" : "h-5 w-7"}`} />
+          <div aria-hidden className={`mb-2 rounded-md bg-piggy-pale ${big ? "h-8 w-11" : "h-5 w-7"}`} />
           <span className={`font-display font-semibold tracking-widest ${big ? "text-xl" : "text-sm"}`}>•••• {card.last4}</span>
         </div>
       </div>
@@ -148,7 +148,7 @@ export function Wallet() {
           {/* flap: lies over the pocket, then flips back */}
           <motion.div
             aria-hidden
-            className="pointer-events-none absolute inset-x-0 bottom-[118px] z-20 h-[64px] rounded-t-[2rem] bg-[#F58A4F] shadow-clay"
+            className="pointer-events-none absolute inset-x-0 bottom-[118px] z-20 h-[64px] rounded-t-[2rem] bg-leather-light shadow-clay"
             style={{ originY: 1, transformPerspective: 900 }}
             initial={{ rotateX: 180 }}
             animate={{ rotateX: open ? 0 : 180, opacity: open ? 0 : 1 }}

@@ -1,0 +1,88 @@
+{
+  "color": {
+    "bg": {
+      "canvas": {
+        "$type": "color",
+        "$value": "{color.night.900}"
+      },
+      "surface": {
+        "$type": "color",
+        "$value": "{color.night.800}"
+      },
+      "raised": {
+        "$type": "color",
+        "$value": "{color.night.700}"
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{color.night.600}"
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.ink}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.mist}"
+      },
+      "on-accent": {
+        "$type": "color",
+        "$value": "{color.night.900}"
+      }
+    },
+    "accent": {
+      "primary": {
+        "$type": "color",
+        "$value": "{color.piggy.default}"
+      },
+      "primary-hover": {
+        "$type": "color",
+        "$value": "{color.piggy.light}"
+      },
+      "primary-deep": {
+        "$type": "color",
+        "$value": "{color.piggy.deep}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{color.periwinkle.default}"
+      },
+      "secondary-hover": {
+        "$type": "color",
+        "$value": "{color.periwinkle.light}"
+      }
+    },
+    "status": {
+      "good": {
+        "$type": "color",
+        "$value": "{color.mint.default}"
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{color.coral}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{color.ice}"
+      }
+    },
+    "focus": {
+      "ring": {
+        "$type": "color",
+        "$value": "{color.ice}"
+      }
+    },
+    "card": {
+      "leather": {
+        "$type": "color",
+        "$value": "{color.leather.default}"
+      },
+      "leather-deep": {
+        "$type": "color",
+        "$value": "{color.leather.deep}"
+      }
+    }
+  }
+}

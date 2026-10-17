@@ -1,0 +1,935 @@
+{
+ "collections": [
+  {
+   "name": "Digi · Primitives · Colour",
+   "modes": [
+    "Value"
+   ],
+   "vars": [
+    {
+     "name": "color/night/600",
+     "type": "COLOR",
+     "values": {
+      "Value": "#26306A"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-night-600"
+    },
+    {
+     "name": "color/night/700",
+     "type": "COLOR",
+     "values": {
+      "Value": "#1A2350"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-night-700"
+    },
+    {
+     "name": "color/night/800",
+     "type": "COLOR",
+     "values": {
+      "Value": "#111836"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-night-800"
+    },
+    {
+     "name": "color/night/900",
+     "type": "COLOR",
+     "values": {
+      "Value": "#0A0F24"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-night-900"
+    },
+    {
+     "name": "color/night/default",
+     "type": "COLOR",
+     "values": {
+      "Value": "#0A0F24"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-night-default"
+    },
+    {
+     "name": "color/ink",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F3F6FF"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-ink"
+    },
+    {
+     "name": "color/mist",
+     "type": "COLOR",
+     "values": {
+      "Value": "#B4BEE4"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-mist"
+    },
+    {
+     "name": "color/periwinkle/default",
+     "type": "COLOR",
+     "values": {
+      "Value": "#7C93FF"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-periwinkle-default"
+    },
+    {
+     "name": "color/periwinkle/deep",
+     "type": "COLOR",
+     "values": {
+      "Value": "#5C7BEA"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-periwinkle-deep"
+    },
+    {
+     "name": "color/periwinkle/light",
+     "type": "COLOR",
+     "values": {
+      "Value": "#95A7FF"
+     },
+     "description": "Hover on periwinkle buttons.",
+     "codeSyntax": "--color-periwinkle-light"
+    },
+    {
+     "name": "color/piggy/default",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FFC53D"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-piggy-default"
+    },
+    {
+     "name": "color/piggy/deep",
+     "type": "COLOR",
+     "values": {
+      "Value": "#E8A317"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-piggy-deep"
+    },
+    {
+     "name": "color/piggy/shadow",
+     "type": "COLOR",
+     "values": {
+      "Value": "#B87A00"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-piggy-shadow"
+    },
+    {
+     "name": "color/piggy/light",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FFD166"
+     },
+     "description": "Hover on gold buttons.",
+     "codeSyntax": "--color-piggy-light"
+    },
+    {
+     "name": "color/piggy/pale",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FFE08A"
+     },
+     "description": "The chip on payment cards.",
+     "codeSyntax": "--color-piggy-pale"
+    },
+    {
+     "name": "color/mint/default",
+     "type": "COLOR",
+     "values": {
+      "Value": "#4BE3A3"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-mint-default"
+    },
+    {
+     "name": "color/mint/deep",
+     "type": "COLOR",
+     "values": {
+      "Value": "#2BB3A0"
+     },
+     "description": "The end of the online card gradient.",
+     "codeSyntax": "--color-mint-deep"
+    },
+    {
+     "name": "color/coral",
+     "type": "COLOR",
+     "values": {
+      "Value": "#FF8A7A"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-coral"
+    },
+    {
+     "name": "color/ice",
+     "type": "COLOR",
+     "values": {
+      "Value": "#A8ECFF"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-ice"
+    },
+    {
+     "name": "color/leather/default",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F07A3C"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-leather-default"
+    },
+    {
+     "name": "color/leather/deep",
+     "type": "COLOR",
+     "values": {
+      "Value": "#C4551F"
+     },
+     "description": "Primitive colours. Use them through a semantic color/* token in designs; in code they are the Tailwind colour names.",
+     "codeSyntax": "--color-leather-deep"
+    },
+    {
+     "name": "color/leather/light",
+     "type": "COLOR",
+     "values": {
+      "Value": "#F58A4F"
+     },
+     "description": "The wallet's front flap.",
+     "codeSyntax": "--color-leather-light"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  },
+  {
+   "name": "Digi · Primitives · Size",
+   "modes": [
+    "Value"
+   ],
+   "vars": [
+    {
+     "name": "size/radius/clay",
+     "type": "FLOAT",
+     "values": {
+      "Value": 28
+     },
+     "description": "Corner radius: clay for raised tiles; Tailwind's own radii cover the rest.",
+     "codeSyntax": "--size-radius-clay"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  },
+  {
+   "name": "Digi · Primitives · Type",
+   "modes": [
+    "Value"
+   ],
+   "vars": [
+    {
+     "name": "font/family/display",
+     "type": "STRING",
+     "values": {
+      "Value": "Fredoka"
+     },
+     "description": "Fredoka, for headings, buttons, numbers and eyebrows: the playful voice.",
+     "codeSyntax": "--font-family-display"
+    },
+    {
+     "name": "font/family/sans",
+     "type": "STRING",
+     "values": {
+      "Value": "Nunito"
+     },
+     "description": "Nunito, for body text.",
+     "codeSyntax": "--font-family-sans"
+    },
+    {
+     "name": "font/weight/medium",
+     "type": "FLOAT",
+     "values": {
+      "Value": 500
+     },
+     "description": "Font weights. Semibold carries most of the interface.",
+     "codeSyntax": "--font-weight-medium"
+    },
+    {
+     "name": "font/weight/semibold",
+     "type": "FLOAT",
+     "values": {
+      "Value": 600
+     },
+     "description": "Font weights. Semibold carries most of the interface.",
+     "codeSyntax": "--font-weight-semibold"
+    },
+    {
+     "name": "font/weight/bold",
+     "type": "FLOAT",
+     "values": {
+      "Value": 700
+     },
+     "description": "Font weights. Semibold carries most of the interface.",
+     "codeSyntax": "--font-weight-bold"
+    },
+    {
+     "name": "font/size/xs",
+     "type": "FLOAT",
+     "values": {
+      "Value": 12
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-xs"
+    },
+    {
+     "name": "font/size/sm",
+     "type": "FLOAT",
+     "values": {
+      "Value": 14
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-sm"
+    },
+    {
+     "name": "font/size/base",
+     "type": "FLOAT",
+     "values": {
+      "Value": 16
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-base"
+    },
+    {
+     "name": "font/size/lg",
+     "type": "FLOAT",
+     "values": {
+      "Value": 18
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-lg"
+    },
+    {
+     "name": "font/size/xl",
+     "type": "FLOAT",
+     "values": {
+      "Value": 20
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-xl"
+    },
+    {
+     "name": "font/size/2xl",
+     "type": "FLOAT",
+     "values": {
+      "Value": 24
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-2xl"
+    },
+    {
+     "name": "font/size/3xl",
+     "type": "FLOAT",
+     "values": {
+      "Value": 30
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-3xl"
+    },
+    {
+     "name": "font/size/4xl",
+     "type": "FLOAT",
+     "values": {
+      "Value": 36
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-4xl"
+    },
+    {
+     "name": "font/size/5xl",
+     "type": "FLOAT",
+     "values": {
+      "Value": 48
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-5xl"
+    },
+    {
+     "name": "font/size/6xl",
+     "type": "FLOAT",
+     "values": {
+      "Value": 60
+     },
+     "description": "Tailwind's type scale in px, as used in the app.",
+     "codeSyntax": "--font-size-6xl"
+    },
+    {
+     "name": "font/line-height/16",
+     "type": "FLOAT",
+     "values": {
+      "Value": 16
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-16"
+    },
+    {
+     "name": "font/line-height/20",
+     "type": "FLOAT",
+     "values": {
+      "Value": 20
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-20"
+    },
+    {
+     "name": "font/line-height/24",
+     "type": "FLOAT",
+     "values": {
+      "Value": 24
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-24"
+    },
+    {
+     "name": "font/line-height/28",
+     "type": "FLOAT",
+     "values": {
+      "Value": 28
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-28"
+    },
+    {
+     "name": "font/line-height/32",
+     "type": "FLOAT",
+     "values": {
+      "Value": 32
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-32"
+    },
+    {
+     "name": "font/line-height/36",
+     "type": "FLOAT",
+     "values": {
+      "Value": 36
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-36"
+    },
+    {
+     "name": "font/line-height/40",
+     "type": "FLOAT",
+     "values": {
+      "Value": 40
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-40"
+    },
+    {
+     "name": "font/line-height/48",
+     "type": "FLOAT",
+     "values": {
+      "Value": 48
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-48"
+    },
+    {
+     "name": "font/line-height/60",
+     "type": "FLOAT",
+     "values": {
+      "Value": 60
+     },
+     "description": "Line heights in px, paired with font.size as Tailwind does.",
+     "codeSyntax": "--font-line-height-60"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  },
+  {
+   "name": "Digi · Theme",
+   "modes": [
+    "Night"
+   ],
+   "vars": [
+    {
+     "name": "color/bg/canvas",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/night/900"
+      }
+     },
+     "description": "The night sky behind every screen.",
+     "codeSyntax": "--color-bg-canvas"
+    },
+    {
+     "name": "color/bg/surface",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/night/800"
+      }
+     },
+     "description": "Clay tiles and cards (.clay).",
+     "codeSyntax": "--color-bg-surface"
+    },
+    {
+     "name": "color/bg/raised",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/night/700"
+      }
+     },
+     "description": "Ghost buttons and raised rows inside a tile.",
+     "codeSyntax": "--color-bg-raised"
+    },
+    {
+     "name": "color/bg/pressed",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/night/600"
+      }
+     },
+     "description": "Hover on ghost buttons and selected rows.",
+     "codeSyntax": "--color-bg-pressed"
+    },
+    {
+     "name": "color/text/primary",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/ink"
+      }
+     },
+     "description": "Headings and body text.",
+     "codeSyntax": "--color-text-primary"
+    },
+    {
+     "name": "color/text/secondary",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/mist"
+      }
+     },
+     "description": "Supporting text and eyebrows.",
+     "codeSyntax": "--color-text-secondary"
+    },
+    {
+     "name": "color/text/on-accent",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/night/900"
+      }
+     },
+     "description": "Text on gold and blue buttons.",
+     "codeSyntax": "--color-text-on-accent"
+    },
+    {
+     "name": "color/accent/primary",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/piggy/default"
+      }
+     },
+     "description": "Gold: the main action, the piggy bank and coins. One gold button per screen.",
+     "codeSyntax": "--color-accent-primary"
+    },
+    {
+     "name": "color/accent/primary-hover",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/piggy/light"
+      }
+     },
+     "description": "Hover on gold buttons.",
+     "codeSyntax": "--color-accent-primary-hover"
+    },
+    {
+     "name": "color/accent/primary-deep",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/piggy/deep"
+      }
+     },
+     "description": "Gold edges and pressed gold.",
+     "codeSyntax": "--color-accent-primary-deep"
+    },
+    {
+     "name": "color/accent/secondary",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/periwinkle/default"
+      }
+     },
+     "description": "Blue: secondary actions.",
+     "codeSyntax": "--color-accent-secondary"
+    },
+    {
+     "name": "color/accent/secondary-hover",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/periwinkle/light"
+      }
+     },
+     "description": "Hover on blue buttons.",
+     "codeSyntax": "--color-accent-secondary-hover"
+    },
+    {
+     "name": "color/status/good",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/mint/default"
+      }
+     },
+     "description": "Money in, success and online cards. Always with words or an icon.",
+     "codeSyntax": "--color-status-good"
+    },
+    {
+     "name": "color/status/error",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/coral"
+      }
+     },
+     "description": "Errors and money out. Always with words or an icon.",
+     "codeSyntax": "--color-status-error"
+    },
+    {
+     "name": "color/status/info",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/ice"
+      }
+     },
+     "description": "Neutral highlights.",
+     "codeSyntax": "--color-status-info"
+    },
+    {
+     "name": "color/focus/ring",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/ice"
+      }
+     },
+     "description": "Keyboard focus outline, 3 px with a 3 px offset.",
+     "codeSyntax": "--color-focus-ring"
+    },
+    {
+     "name": "color/card/leather",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/leather/default"
+      }
+     },
+     "description": "The wallet's leather.",
+     "codeSyntax": "--color-card-leather"
+    },
+    {
+     "name": "color/card/leather-deep",
+     "type": "COLOR",
+     "values": {
+      "Night": {
+       "alias": "color/leather/deep"
+      }
+     },
+     "description": "The wallet's stitching and darker leather.",
+     "codeSyntax": "--color-card-leather-deep"
+    }
+   ],
+   "scopes": null,
+   "cssPrefix": ""
+  }
+ ],
+ "text": [
+  {
+   "name": "Digi/Display XL",
+   "fontFamily": "Fredoka",
+   "fontWeight": 600,
+   "fontSize": 60,
+   "lineHeight": 60,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/6xl",
+    "lineHeight": "font/line-height/60"
+   },
+   "description": "Use for the balance on the home screen (text-6xl)."
+  },
+  {
+   "name": "Digi/Display L",
+   "fontFamily": "Fredoka",
+   "fontWeight": 600,
+   "fontSize": 48,
+   "lineHeight": 48,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/5xl",
+    "lineHeight": "font/line-height/48"
+   },
+   "description": "Use for big amounts, such as the piggy bank total (text-5xl)."
+  },
+  {
+   "name": "Digi/Display M",
+   "fontFamily": "Fredoka",
+   "fontWeight": 600,
+   "fontSize": 36,
+   "lineHeight": 40,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/4xl",
+    "lineHeight": "font/line-height/40"
+   },
+   "description": "Use for amounts while sending (text-4xl)."
+  },
+  {
+   "name": "Digi/Title",
+   "fontFamily": "Fredoka",
+   "fontWeight": 600,
+   "fontSize": 30,
+   "lineHeight": 36,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/3xl",
+    "lineHeight": "font/line-height/36"
+   },
+   "description": "Use for screen titles (text-3xl)."
+  },
+  {
+   "name": "Digi/Heading",
+   "fontFamily": "Fredoka",
+   "fontWeight": 600,
+   "fontSize": 24,
+   "lineHeight": 32,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/2xl",
+    "lineHeight": "font/line-height/32"
+   },
+   "description": "Use for card and section headings (text-2xl)."
+  },
+  {
+   "name": "Digi/Subheading",
+   "fontFamily": "Fredoka",
+   "fontWeight": 600,
+   "fontSize": 20,
+   "lineHeight": 28,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/xl",
+    "lineHeight": "font/line-height/28"
+   },
+   "description": "Use for smaller headings and list titles (text-xl)."
+  },
+  {
+   "name": "Digi/Button",
+   "fontFamily": "Fredoka",
+   "fontWeight": 600,
+   "fontSize": 18,
+   "lineHeight": 28,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/lg",
+    "lineHeight": "font/line-height/28"
+   },
+   "description": "Use for button labels only (font-display text-lg)."
+  },
+  {
+   "name": "Digi/Body L",
+   "fontFamily": "Nunito",
+   "fontWeight": 600,
+   "fontSize": 18,
+   "lineHeight": 28,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/semibold",
+    "fontSize": "font/size/lg",
+    "lineHeight": "font/line-height/28"
+   },
+   "description": "Use for lead text and prominent rows (text-lg)."
+  },
+  {
+   "name": "Digi/Body",
+   "fontFamily": "Nunito",
+   "fontWeight": 500,
+   "fontSize": 16,
+   "lineHeight": 24,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/base",
+    "lineHeight": "font/line-height/24"
+   },
+   "description": "Use for running text (text-base)."
+  },
+  {
+   "name": "Digi/Body S",
+   "fontFamily": "Nunito",
+   "fontWeight": 500,
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/sm",
+    "lineHeight": "font/line-height/20"
+   },
+   "description": "Use for supporting text and labels (text-sm)."
+  },
+  {
+   "name": "Digi/Caption",
+   "fontFamily": "Nunito",
+   "fontWeight": 500,
+   "fontSize": 12,
+   "lineHeight": 16,
+   "letterSpacingPercent": 0,
+   "textCase": "ORIGINAL",
+   "bind": {
+    "fontFamily": "font/family/sans",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/xs",
+    "lineHeight": "font/line-height/16"
+   },
+   "description": "Use for metadata and fine print (text-xs)."
+  },
+  {
+   "name": "Digi/Eyebrow",
+   "fontFamily": "Fredoka",
+   "fontWeight": 500,
+   "fontSize": 14,
+   "lineHeight": 20,
+   "letterSpacingPercent": 14,
+   "textCase": "UPPER",
+   "bind": {
+    "fontFamily": "font/family/display",
+    "fontWeight": "font/weight/medium",
+    "fontSize": "font/size/sm",
+    "lineHeight": "font/line-height/20"
+   },
+   "description": "Use for the small uppercase label above a section (.eyebrow). Avoid for more than three words."
+  }
+ ],
+ "effects": [
+  {
+   "name": "Digi/Shadow/clay",
+   "description": "The soft clay depth: an inner highlight, an inner shade and a drop shadow. clay for tiles, clay-sm for buttons, press for the pressed state.",
+   "layers": [
+    {
+     "inset": true,
+     "x": 0,
+     "y": 2,
+     "blur": 0,
+     "spread": 0,
+     "color": "#FFFFFF14"
+    },
+    {
+     "inset": true,
+     "x": 0,
+     "y": -6,
+     "blur": 12,
+     "spread": 0,
+     "color": "#00000040"
+    },
+    {
+     "inset": false,
+     "x": 0,
+     "y": 10,
+     "blur": 30,
+     "spread": 0,
+     "color": "#0306148C"
+    }
+   ]
+  },
+  {
+   "name": "Digi/Shadow/clay-sm",
+   "description": "The soft clay depth: an inner highlight, an inner shade and a drop shadow. clay for tiles, clay-sm for buttons, press for the pressed state.",
+   "layers": [
+    {
+     "inset": true,
+     "x": 0,
+     "y": 1,
+     "blur": 0,
+     "spread": 0,
+     "color": "#FFFFFF1A"
+    },
+    {
+     "inset": true,
+     "x": 0,
+     "y": -3,
+     "blur": 6,
+     "spread": 0,
+     "color": "#00000040"
+    },
+    {
+     "inset": false,
+     "x": 0,
+     "y": 4,
+     "blur": 14,
+     "spread": 0,
+     "color": "#03061473"
+    }
+   ]
+  },
+  {
+   "name": "Digi/Shadow/press",
+   "description": "The soft clay depth: an inner highlight, an inner shade and a drop shadow. clay for tiles, clay-sm for buttons, press for the pressed state.",
+   "layers": [
+    {
+     "inset": true,
+     "x": 0,
+     "y": 3,
+     "blur": 8,
+     "spread": 0,
+     "color": "#00000059"
+    }
+   ]
+  }
+ ]
+}
