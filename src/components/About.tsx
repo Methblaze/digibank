@@ -1,5 +1,3 @@
-import { ArrowUpRight } from "lucide-react";
-
 const CASE_URL = "https://portfoliokjaer.vercel.app/work/digibank";
 // Built from tokens/ by `npm run tokens:build` into public/design-system/
 const DESIGN_SYSTEM_URL = `${import.meta.env.BASE_URL}design-system/`;
@@ -8,9 +6,8 @@ const DESIGN_SYSTEM_URL = `${import.meta.env.BASE_URL}design-system/`;
 export function About() {
   return (
     <div className="space-y-6">
-      <p className="eyebrow">Concept · 2026 redesign</p>
       <h1 className="text-5xl font-semibold leading-[1.05]">
-        Banking you can <span className="text-piggy">hold</span>
+        Banking you can hold
       </h1>
       <p className="text-lg leading-relaxed text-mist">
         Digi Bank is mobile banking for 16 to 29 year olds, built on things you already understand: a wallet for your
@@ -36,7 +33,7 @@ export function About() {
       </ul>
       <div className="flex flex-wrap gap-3">
         <a href={CASE_URL} className="btn-ghost w-fit">
-          Read the case study <ArrowUpRight aria-hidden size={20} />
+          Read the case study
         </a>
         <a href={DESIGN_SYSTEM_URL} className="btn-ghost w-fit">
           See the design system

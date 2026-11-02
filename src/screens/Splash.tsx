@@ -16,8 +16,8 @@ export function Splash({ onStart }: { onStart: () => void }) {
       <div>
         <motion.div
           initial={{ y: -40, opacity: 0 }}
-          animate={{ y: [0, -10, 0], opacity: 1 }}
-          transition={{ y: { duration: 2.4, repeat: Infinity, ease: "easeInOut" }, opacity: { duration: 0.4 } }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ y: { type: "spring", stiffness: 220, damping: 14 }, opacity: { duration: 0.4 } }}
         >
           <Piggy2D stage={0} shattered={false} hitKey={0} feedKey={0} className="mx-auto w-56" />
         </motion.div>

@@ -221,7 +221,7 @@ export function Hand({ closed = false, coin = false, className }: { closed?: boo
       <path d="M72 116c18 8 42 8 60 0" stroke="#7C8BE8" strokeWidth="4" strokeLinecap="round" fill="none" />
       {coin && (
         <motion.g initial={{ y: -170, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ type: "spring", stiffness: 220, damping: 15 }}>
-          <g transform="translate(80 70)">
+          <g transform="translate(78 34)">
             <Coin size={44} />
           </g>
         </motion.g>

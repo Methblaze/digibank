@@ -10,24 +10,24 @@ const look: Record<Card["kind"], string> = {
   Online: "from-mint to-mint-deep",
 };
 
-function CardFace({ card, big = false }: { card: Card; big?: boolean }) {
+function CardFace({ card, big = false, side = "left" }: { card: Card; big?: boolean; side?: "left" | "right" }) {
   return (
     <div className={`relative h-full w-full overflow-hidden rounded-2xl bg-gradient-to-br ${look[card.kind]} p-4 text-night shadow-clay`}>
-      <div aria-hidden className="absolute -right-6 -top-8 h-28 w-28 rounded-full bg-white/25" />
       <div className="relative flex h-full flex-col justify-between">
-        <div className="flex items-start justify-between">
+        <div className={`flex items-start justify-between gap-2 ${side === "right" ? "flex-row-reverse text-right" : ""}`}>
           <span className={`font-display font-semibold ${big ? "text-xl" : "text-sm"}`}>{card.name}</span>
-          <span className="rounded-full bg-night/15 px-2 py-0.5 text-xs font-bold">{card.kind}</span>
+          {/* The kind, up close only, and only when the name does not already say it ("Travel card", Travel) */}
+          {big && !card.name.includes(card.kind) && <span className="text-sm font-semibold">{card.kind}</span>}
         </div>
         <div>
           <div aria-hidden className={`mb-2 rounded-md bg-piggy-pale ${big ? "h-8 w-11" : "h-5 w-7"}`} />
-          <span className={`font-display font-semibold tracking-widest ${big ? "text-xl" : "text-sm"}`}>•••• {card.last4}</span>
+          <span className={`font-display font-semibold tabular-nums ${big ? "text-xl" : "text-sm"}`}>•••• {card.last4}</span>
         </div>
       </div>
       <AnimatePresence>
         {card.frozen && (
           <motion.div
-            className="absolute inset-0 grid place-items-center bg-gradient-to-br from-ice/90 to-white/70 backdrop-blur-[2px]"
+            className="absolute inset-0 grid place-items-center bg-ice/95"
             initial={{ opacity: 0, scale: 1.15 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0 }}
@@ -80,7 +80,7 @@ export function Wallet() {
 
         {card && (
           <div className="mt-2 space-y-3">
-            <div className="clay flex items-center justify-between gap-4 p-4">
+            <div className="sheet flex items-center justify-between gap-4 p-4">
               <div>
                 <p className="font-display text-lg font-semibold" id="freeze-label">
                   Freeze card
@@ -128,13 +128,13 @@ export function Wallet() {
                     aria-label={`${c.name}, ${c.kind}, ending ${c.last4}${c.frozen ? ", frozen" : ""}`}
                     className="block h-full w-full cursor-pointer rounded-2xl"
                     initial={{ y: 40, rotate: 0, x: 0 }}
-                    animate={open ? { y: -118 + Math.abs(offset) * 16, x: offset * 70, rotate: offset * 13 } : { y: 40, x: 0, rotate: 0 }}
-                    whileHover={{ y: -136 + Math.abs(offset) * 16 }}
+                    animate={open ? { y: -118 - Math.abs(offset) * 34, x: offset * 56, rotate: offset * 10 } : { y: 40, x: 0, rotate: 0 }}
+                    whileHover={{ y: -136 - Math.abs(offset) * 34 }}
                     whileTap={{ scale: 0.96 }}
                     transition={{ type: "spring", stiffness: 260, damping: 22, delay: open ? 0.25 + i * 0.07 : 0 }}
                     style={{ originY: 1 }}
                   >
-                    <CardFace card={c} />
+                    <CardFace card={c} side={offset > 0 ? "right" : "left"} />
                   </motion.button>
                 </li>
               );

@@ -41,7 +41,7 @@ function Phone() {
   }, [gate]);
 
   return (
-    <div className="relative flex h-[100dvh] w-full flex-col overflow-hidden bg-night lg:h-[min(844px,92dvh)] lg:w-[390px] lg:rounded-[3rem] lg:border-[10px] lg:border-night-700 lg:shadow-[0_40px_120px_rgba(92,123,234,0.25)]">
+    <div className="relative flex h-[100dvh] w-full flex-col overflow-hidden bg-night lg:h-[min(844px,92dvh)] lg:w-[390px] lg:rounded-clay lg:border lg:border-night-700">
       <AnimatePresence mode="wait" initial={false}>
         {gate === "splash" && (
           <Fade key="splash">

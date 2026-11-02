@@ -117,12 +117,12 @@ export function PiggyScreen() {
         <span className="font-display text-4xl font-semibold">{kr(saved)}</span>
         <span className="text-mist">of {kr(state.goal.target)}</span>
       </div>
-      <div className="mt-2 h-3 overflow-hidden rounded-full bg-night-800 shadow-press" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)} aria-label="Savings goal">
+      <div className="mt-2 h-3 overflow-hidden rounded-full bg-night-800" role="progressbar" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(progress * 100)} aria-label="Savings goal">
         <motion.div className="h-full rounded-full bg-piggy" animate={{ scaleX: progress }} style={{ originX: 0 }} />
       </div>
 
       {/* The stage: the piggy is one big button while you are cracking it */}
-      <div className="relative mt-4 h-[280px] overflow-visible rounded-clay bg-gradient-to-b from-night-800 to-night">
+      <div className="relative mt-4 h-[280px] overflow-visible rounded-clay">
         <div className="absolute inset-0">{scene}</div>
         <AnimatePresence>
           {drop && (
@@ -169,7 +169,7 @@ export function PiggyScreen() {
         {mode === "idle" && (
           <>
             <div>
-              <h2 className="eyebrow mb-2">Feed the piggy</h2>
+              <h2 className="label mb-2">Feed the piggy</h2>
               <div className="grid grid-cols-3 gap-2">
                 {FEEDS.map((a) => (
                   <motion.button key={a} type="button" whileTap={{ scale: 0.92 }} onClick={() => feed(a)} className="btn-ghost px-2" disabled={a > state.balances.everyday}>
@@ -210,7 +210,7 @@ export function PiggyScreen() {
                 }}
                 className="btn-gold"
               >
-                Let's go
+                Let’s go
               </button>
             </div>
           </fieldset>
@@ -240,7 +240,7 @@ export function PiggyScreen() {
         {mode === "broken" && (
           <div className="space-y-3">
             {state.lastCrack != null ? (
-              <div className="clay p-4">
+              <div className="sheet p-4">
                 <p className="font-display text-lg font-semibold">{kr(state.lastCrack)} is in your everyday account</p>
                 <p className="text-sm text-mist">Changed your mind? You can put it back.</p>
                 <button type="button" onClick={undo} className="btn-ghost mt-3 w-full">

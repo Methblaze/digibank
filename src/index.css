@@ -1,3 +1,10 @@
+/* Hallmark · checked: 2026-11-02 · genre: playful (inferred)
+ * floor: 0 FAIL · fixed: 10a, 29, 38, 48, 54, 63, 67, F1, F3; card pills, idle loops, clipped wallet fan, focus ring on script-focused headings
+ * surfaces: clay only on objects you touch (buttons, keys, coins, cards, tools); information sits flat, lists are one sheet with dividers
+ * review: fresh-context subagent, verdict fix, 6 findings: 5 fixed, 1 declined (the arrow on the case-study link, Floor 10)
+ * built: the project · redesign: restyle · v2.0.0 */
+/* Hallmark · dropped the Home quick actions (Wallet, Piggy, Send tiles) · they repeated the tab bar, removed at the owner’s request */
+/* Hallmark · waive 80 · the drawn piggy is the app's own mascot, the 2019 piggy bank the whole concept is built on · the piggy bank you crack open is the banking concept itself, not decoration */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,13 +26,29 @@
   h2,
   h3 {
     @apply font-display;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  /* Headings that take focus from script (each step of Send) keep focus for
+     screen readers but draw no ring: nobody tabbed to them */
+  [tabindex="-1"]:focus {
+    outline: none;
   }
 }
 
 @layer components {
-  /* Soft "clay" surface: a raised tile with an inner highlight */
+  /* Soft "clay": raised, for objects you touch (keys, tools). Information
+     sits flat on a sheet instead, and a list is one sheet with dividers. */
   .clay {
     @apply rounded-clay bg-night-800 shadow-clay;
+  }
+  .sheet {
+    @apply rounded-2xl bg-night-800;
+  }
+  .rows {
+    @apply divide-y divide-night-700;
   }
   .btn {
     @apply inline-flex min-h-[48px] cursor-pointer select-none items-center justify-center gap-2 rounded-full px-6 font-display text-lg font-semibold transition-[background-color,box-shadow,opacity] duration-200 disabled:cursor-not-allowed disabled:opacity-45;
@@ -39,8 +62,9 @@
   .btn-ghost {
     @apply btn bg-night-700 text-ink shadow-clay-sm hover:bg-night-600 active:shadow-press;
   }
-  .eyebrow {
-    @apply font-display text-sm font-medium uppercase tracking-[0.14em] text-mist;
+  /* A small label that names a block, such as "Balance": sentence case, untracked */
+  .label {
+    @apply font-sans text-sm font-semibold text-mist;
   }
 }
 

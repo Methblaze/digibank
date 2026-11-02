@@ -56,7 +56,8 @@ export function Pin({ onUnlock }: { onUnlock: () => void }) {
 
       <div className="mt-8 flex justify-center gap-4" aria-hidden>
         {[0, 1, 2, 3].map((i) => (
-          <div key={i} className="relative grid h-16 w-14 place-items-center overflow-visible rounded-2xl bg-night-800 shadow-press">
+          <div key={i} className="relative grid h-16 w-14 place-items-center overflow-visible rounded-2xl border border-night-600 bg-night-800">
+            <span className="absolute top-2 h-1 w-7 rounded-full bg-night-900" />
             <AnimatePresence>
               {pin.length > i && (
                 <motion.div
@@ -74,7 +75,7 @@ export function Pin({ onUnlock }: { onUnlock: () => void }) {
         ))}
       </div>
 
-      <div className="mt-auto grid grid-cols-3 gap-3" role="group" aria-label="PIN keypad">
+      <div className="mt-auto grid grid-cols-3 justify-items-center gap-x-6 gap-y-3" role="group" aria-label="PIN keypad">
         {KEYS.map((k, i) =>
           k === "" ? (
             <span key={i} />
@@ -85,7 +86,7 @@ export function Pin({ onUnlock }: { onUnlock: () => void }) {
               onClick={() => press(k)}
               whileTap={{ scale: 0.9 }}
               aria-label={k === "del" ? "Delete last digit" : k}
-              className="clay grid h-16 place-items-center font-display text-2xl font-semibold hover:bg-night-700"
+              className="grid size-[4.5rem] place-items-center rounded-full bg-night-800 font-display text-2xl font-semibold shadow-clay hover:bg-night-700"
             >
               {k === "del" ? <Delete aria-hidden size={26} /> : k}
             </motion.button>

@@ -11,8 +11,8 @@ const tabs: { route: Route; label: string; Icon: typeof House }[] = [
 
 export function TabBar({ route }: { route: Route }) {
   return (
-    <nav aria-label="Main" className="absolute inset-x-3 bottom-3 z-30 pb-[env(safe-area-inset-bottom)]">
-      <ul className="clay flex justify-between p-1.5">
+    <nav aria-label="Main" className="absolute inset-x-0 bottom-0 z-30 border-t border-night-700 bg-night-900 pb-[env(safe-area-inset-bottom)]">
+      <ul className="flex justify-between px-2">
         {tabs.map(({ route: r, label, Icon }) => {
           const active = r === route;
           return (
@@ -24,12 +24,12 @@ export function TabBar({ route }: { route: Route }) {
                   go(r);
                 }}
                 aria-current={active ? "page" : undefined}
-                className="relative flex min-h-[56px] flex-col items-center justify-center gap-0.5 rounded-[1.25rem] text-xs font-bold"
+                className="relative flex min-h-[64px] flex-col items-center justify-center gap-0.5 text-xs font-bold"
               >
                 {active && (
                   <motion.span
-                    layoutId="tab-pill"
-                    className="absolute inset-0 rounded-[1.25rem] bg-night-600"
+                    layoutId="tab-mark"
+                    className="absolute inset-x-6 top-0 h-[3px] rounded-b-full bg-piggy"
                     transition={{ type: "spring", stiffness: 500, damping: 36 }}
                   />
                 )}

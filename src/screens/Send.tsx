@@ -70,7 +70,7 @@ export function Send() {
           )}
           <ol className="flex flex-1 justify-center gap-2" aria-label={`Step ${index + 1} of ${STEPS.length}`}>
             {STEPS.map((s, i) => (
-              <li key={s} className={`h-2 rounded-full transition-all duration-300 ${i <= index ? "w-8 bg-piggy" : "w-2 bg-night-600"}`} />
+              <li key={s} className={`h-2 w-8 rounded-full transition-colors duration-300 ${i <= index ? "bg-piggy" : "bg-night-600"}`} />
             ))}
           </ol>
           <span className="w-11" />
@@ -91,20 +91,20 @@ export function Send() {
               <h1 ref={headingRef} tabIndex={-1} className="text-3xl font-semibold">
                 Who gets the coins?
               </h1>
-              <ul className="mt-6 grid grid-cols-2 gap-3">
+              <ul className="mt-8 grid grid-cols-2 gap-y-6">
                 {state.friends.map((f, i) => (
                   <motion.li key={f.id} initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} transition={{ delay: i * 0.06 }}>
                     <motion.button
                       type="button"
-                      whileTap={{ scale: 0.95 }}
+                      whileTap={{ scale: 0.94 }}
                       onClick={() => {
                         setTo(f.id);
                         setStep("from");
                       }}
-                      className="clay flex w-full flex-col items-center gap-2 p-5 hover:bg-night-700"
+                      className="group flex w-full flex-col items-center gap-3 rounded-2xl py-2"
                     >
-                      <Avatar name={f.name} hue={f.hue} />
-                      <span className="font-display text-lg font-semibold">{f.name}</span>
+                      <Avatar name={f.name} hue={f.hue} size={88} />
+                      <span className="font-display text-lg font-semibold group-hover:text-piggy">{f.name}</span>
                     </motion.button>
                   </motion.li>
                 ))}
@@ -118,7 +118,7 @@ export function Send() {
                 Which coin do you pay from?
               </h1>
               <p className="mt-1 text-mist">Choose an account to send from.</p>
-              <div className="mt-6 space-y-3">
+              <div className="sheet rows mt-6 overflow-hidden">
                 {(["everyday", "piggy"] as AccountId[]).map((id, i) => (
                   <motion.button
                     key={id}
@@ -128,7 +128,7 @@ export function Send() {
                       setStep("amount");
                     }}
                     disabled={state.balances[id] === 0}
-                    className="clay flex w-full items-center gap-4 p-4 text-left hover:bg-night-700 disabled:opacity-50"
+                    className="flex w-full items-center gap-4 p-4 text-left hover:bg-night-700 disabled:opacity-50"
                     initial={{ x: 320 }}
                     animate={{ x: 0 }}
                     transition={{ type: "spring", stiffness: 140, damping: 18, delay: i * 0.15 }}
@@ -154,7 +154,7 @@ export function Send() {
               </h1>
               <div className="mt-6 flex items-end gap-5">
                 <div className="flex-1">
-                  <label htmlFor="amount" className="eyebrow">
+                  <label htmlFor="amount" className="label">
                     Amount in kroner
                   </label>
                   <div className="mt-2 flex items-baseline gap-2 border-b-2 border-night-600 pb-1 focus-within:border-piggy">
@@ -173,7 +173,7 @@ export function Send() {
                     <span className="font-display text-2xl text-mist">kr.</span>
                   </div>
                   <p id="amount-help" className={`mt-2 text-sm ${tooMuch ? "text-coral" : "text-mist"}`}>
-                    {tooMuch ? `That's more than the ${kr(state.balances[from])} you have.` : `You have ${kr(state.balances[from])}.`}
+                    {tooMuch ? `That’s more than the ${kr(state.balances[from])} you have.` : `You have ${kr(state.balances[from])}.`}
                   </p>
                 </div>
                 {/* the coin stack grows with the amount */}
@@ -213,7 +213,7 @@ export function Send() {
                 Hand it over
               </h1>
               <p className="mt-1 text-mist">
-                Drag the coin to {friend.name}'s hand, or use the button.
+                Drag the coin to {friend.name}’s hand, or use the button.
               </p>
               <div className="relative mt-4 flex flex-1 flex-col items-center justify-between gap-4">
                 <motion.div
@@ -232,7 +232,7 @@ export function Send() {
                   <Coin size={96} />
                   <span className="mt-1 font-display text-2xl font-semibold">{kr(amount)}</span>
                 </motion.div>
-                <motion.svg aria-hidden width="24" height="60" viewBox="0 0 24 60" animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 1.4 }}>
+                <motion.svg aria-hidden width="24" height="60" viewBox="0 0 24 60" animate={{ y: [0, 8, 0] }} transition={{ repeat: 2, duration: 1.4 }}>
                   <path d="M12 2v50M3 44l9 10 9-10" className="text-mist" stroke="currentColor" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="4 6" />
                 </motion.svg>
                 <div ref={handRef} className="relative w-full max-w-[260px]">
@@ -265,14 +265,14 @@ export function Send() {
               <h1 ref={headingRef} tabIndex={-1} className="mt-4 text-3xl font-semibold">
                 Sent to {sent.name}
               </h1>
-              <dl className="clay mt-5 w-full space-y-2 p-5 text-left">
+              <dl className="sheet rows mt-5 w-full px-5 text-left">
                 {[
                   ["Amount", kr(sent.amount)],
                   ["From", sent.from === "everyday" ? "Everyday" : "Piggy savings"],
                   ["When", "Just now"],
                   ["Left in that account", kr(state.balances[sent.from])],
                 ].map(([k, v]) => (
-                  <div key={k} className="flex justify-between gap-4">
+                  <div key={k} className="flex justify-between gap-4 py-3">
                     <dt className="text-mist">{k}</dt>
                     <dd className="font-semibold">{v}</dd>
                   </div>
