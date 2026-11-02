@@ -173,7 +173,7 @@ export function Send() {
                     <span className="font-display text-2xl text-mist">kr.</span>
                   </div>
                   <p id="amount-help" className={`mt-2 text-sm ${tooMuch ? "text-coral" : "text-mist"}`}>
-                    {tooMuch ? `That’s more than the ${kr(state.balances[from])} you have.` : `You have ${kr(state.balances[from])}.`}
+                    {tooMuch ? `That’s more than the ${kr(state.balances[from])} you have.` : `You have ${kr(state.balances[from])}`}
                   </p>
                 </div>
                 {/* the coin stack grows with the amount */}
